@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lista_e_carrello {
@@ -20,14 +20,15 @@ public class Lista_e_carrello {
         //fruits.size();
         Scanner daSpostare = new Scanner(System.in);
         System.out.println("Quanti sono gli elementi da mettere nella lista della spesa?");
-        int Nelementi = input.nextLine();
+        Scanner input;
+        int numero = input.nextInt();
         System.out.println("Quali sono?");
-        for (String lista : Nelementi ){
-            Scanner.out.println("Digita i nomi da mettere nella lista del carrello:");
-            int daSpostare = input.next
+        for (int num = numero){
+            System.out.println("Digita i nomi da mettere nella lista del carrello:");
+            int daSpostare = input.next();
         }
-        for (String fruit : fruits){
-            System.out.println(fruits);
+        for (String carello : carrello){
+            System.out.println(carrello);
         }
     }
     

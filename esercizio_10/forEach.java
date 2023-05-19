@@ -1,4 +1,4 @@
-package Mia_repository.Repository_Giorgio.esercizio_10;
+package javaesercizi.esercizio_10;
 
 public class forEach {
     public static void main(String[] args){

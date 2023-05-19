@@ -1,4 +1,4 @@
-package Mia_repository.Repository_Giorgio.esercizio_2;
+
 import java.util.Scanner;
 
 public class Sum {
