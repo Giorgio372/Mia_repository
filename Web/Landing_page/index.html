@@ -1,72 +1,127 @@
 <html>
-    <head>
-        <title>Full Stack Competenze</title>
-        <style>
-            body{
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-            }
 
-            .container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 20px;
-            }
+<head>
+    <title>Full Stack Competenze</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-            .section{
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 20px;
-                margin: 20px;
-            }
+        .menu {
+            background-color: #333;
+            overflow: hidden; /* rimuove la barra di movimento orizzontale */
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
 
-            @media screen and (min-width: 600px){
-                .section {
-                    grid-template-columns: 1fr 1fr;
-                }
-            }
-            @media screen and (min-width: 900px){
-                .section {
-                    grid-template-columns:1fr 1fr 1fr;
-                }
-            }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-            .card{
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                padding: 20px;
-                text-align: center;
-            }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
 
-            .card img {
-                border : 1px;
-                border-radius: 5px;
-                padding: 20px;
-                text-align: center;
+        .section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .section {
+                grid-template-columns: 1fr 1fr;
             }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="section">
-                <div class="card">
-                    <img src="./img/for-designers.svg" alt="Backend Development">
-                    <h2>Sviluppo Backend</h2>
-                    <p>Competenze in Node.js. Express.js, Phyton, Django, Ruby on Rails, ecc.</p>
-                </div>
-                <div class="card">
-                    <img src="./img/for-marketers.svg" alt="Frontend Development">
-                    <h2>Sviluppo Frontend</h2>
-                    <p>Competenze in HTML, CSS, JavaScript, React.js, Vue.js, Angular.js, ecc.</p>
-                </div>
-                <div class="card">
-                    <img src="./img/for-everyone.svg" alt="Database Managment">
-                    <h2>Gestione Database</h2>
-                    <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc.</p>
-                </div>
+        }
+
+        @media screen and (min-width: 900px) {
+            .section {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#backend">Sviluppo Backend</a>
+        <a href="#frontend">Sviluppo Frontend</a>
+        <a href="#database">Database Managment</a>
+    </div>
+
+    <div class="container">
+        <div class="section" id="backend">
+            <div class="card">
+                <img src="./img/for-designers.svg" alt="Backend Development">
+                <h2>Sviluppo Backend</h2>
+                <p>Competenze in Node.js. Express.js, Phyton, Django, Ruby on Rails, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="./img/for-everyone.svg" alt="Backend Development">
+                <h2>Sviluppo Backend</h2>
+                <p>Competenze in Node.js. Express.js, Phyton, Django, Ruby on Rails, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="./img/for-marketers.svg" alt="Backend Development">
+                <h2>Sviluppo Backend</h2>
+                <p>Competenze in Node.js. Express.js, Phyton, Django, Ruby on Rails, ecc.</p>
             </div>
         </div>
-    </body>
+        <div class="section" id="frontend">
+            <div class="card">
+                <img src="./img/for-marketers.svg" alt="Frontend Development">
+                <h2>Sviluppo Frontend</h2>
+                <p>Competenze in HTML, CSS, JavaScript, React.js, Vue.js, Angular.js, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="./img/for-marketers.svg" alt="Frontend Development">
+                <h2>Sviluppo Frontend</h2>
+                <p>Competenze in HTML, CSS, JavaScript, React.js, Vue.js, Angular.js, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="./img/for-marketers.svg" alt="Frontend Development">
+                <h2>Sviluppo Frontend</h2>
+                <p>Competenze in HTML, CSS, JavaScript, React.js, Vue.js, Angular.js, ecc.</p>
+            </div>
+        </div>
+        <div class="section" id="database">
+            <div class="card">
+                <img src="./img/for-everyone.svg" alt="Database Managment">
+                <h2>Gestione Database</h2>
+                <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="./img/for-everyone.svg" alt="Database Managment">
+                <h2>Gestione Database</h2>
+                <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="./img/for-everyone.svg" alt="Database Managment">
+                <h2>Gestione Database</h2>
+                <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
