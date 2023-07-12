@@ -9,7 +9,7 @@ body {
     overflow: hidden; /* rimuove la barra di movimento orizzontale */
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .menu a {
@@ -21,7 +21,8 @@ body {
 
 /* aggiunto */
 .menu a:hover{
-    color: #d81919
+    color: #d81919;
+    transform: scale(1.05);
 }
 
 .container {
@@ -77,7 +78,7 @@ body {
     color: #fff;
     background: linear-gradient(to right, #de3b13, #fabc8d);
     text-align: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .hero h1 {
@@ -117,4 +118,3 @@ body {
 #contact input[type="submit"]:hover {
     background-color: #444;
 }
-
