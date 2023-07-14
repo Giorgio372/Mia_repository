@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Giorgio's portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+
+        .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+        gap: 10px;
+        background-color: #ffffff;
+        padding: 10px;
+        outline: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <ul class="nav-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#works">Lenguages</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
