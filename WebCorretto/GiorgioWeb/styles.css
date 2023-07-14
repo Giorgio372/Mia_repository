@@ -53,7 +53,7 @@ p {
     justify-content: flex-end;
     position: fixed;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     width: 100%;
     background: #22333B;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
