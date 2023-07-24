@@ -1,47 +1,23 @@
+:root {
+    --main-violet: #462255;
+    --main-red:#AA4465;
+    --main-pink:#FFA69E;
+    --main-blue:#93E1D8;
+    --main-green:#DDFFF7;
+
+}
 
 * {
     margin:0;
     padding:0;
 }
-
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 
 }
-
 body {
-    font-family: 'Inter', sans-serif;
-}
-
-@media screen and (max-width: 600px) {
-    .section {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .section {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #fff;
-    background: linear-gradient(to right, #22333B, #720303);
-    text-align: center;
-    flex-direction: column;
-}
-
-.hero h1 {
-    font-size: 4.5em;
-}
-
-.hero p {
-    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 h2 {
@@ -53,63 +29,61 @@ h1 h2 {
 h1 {
     font-size: 6rem;
     text-align: center;
-    color: #ffffff;
+    color: #22333B;
 }
-ul {
-    background-color: #720303;
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
- 
+
 li  {
     list-style: none;
-    display: inline-block;
 }
 
 a {
-    display: block;
     text-decoration: none;
     color: #EAE0D5;
     
 }
 p {
     display: block;
-    color: #ffffff;
-    margin-top: 50px;
+    color: #22333B;
 }
 
-/* menu section*/
-.menu section{
+
+/* NAV SECTION */
+.nav {
     display:flex;
     justify-content: flex-end;
     position: fixed;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     width: 100%;
-    background-color: #720303;
+    background: #22333B;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 2;
     
 }
 
-.menu a {
-    text-align: center;
+
+.nav-list {
+    display: flex;
+    
+}
+.nav-list a {
     display: block;
-    list-style: none;
     padding: 2rem;
-    color: #ffffff;
+    color: #EAE0D5;
     transition: 0.5s ease-in;
     background-color: transparent;
     font-size: 1.5rem;
 }
 
-.menu a:hover{
-    color: #95B8D1;
-    transition: 0.5s ease-in-out;
-    
+.nav-list a:hover{
+    color: #C6AC8F;
 }
 
-/* welcome section*/
+
+
+
+/* Welcome Section*/
+
 .welcome-section {
     
     display:flex;
@@ -128,12 +102,16 @@ p {
     font-size: 2rem;
     font-style: oblique;
 }
+
+
+
+/* Work Section*/
 .works {
-    background-color: #22333B;
+    background-color: #22333B ;
+    /* background-color: #fff; */
     color: #EAE0D5;
     padding-bottom: 50px;
     padding-top: 50px;
-    text-align: center;
 }
 
 .skills {
@@ -167,14 +145,11 @@ p {
     text-align: center;
     transition: transform 0.3s ease-in-out;
     border: none;
+    
 }
 
 .card p {
     color: #EAE0D5;
-}
-
-.card a{
-    display: flex;
 }
 
 .fa-java {
@@ -195,69 +170,66 @@ p {
     font-size: 1.5rem;
 }
 
+
+
 .skill {
     margin: 20px 0;
 }
-.contacts {
-    text-align: center;
-    background-color: #22333B;
-    color: #ffffff;
-    height: 70vh;
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
 }
 
-.contacts h1 {
+.progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+
+/* Contacts */
+
+.contacts {
+    text-align: center;
+    background-color: #EAE0D5;
+    color: #22333B;
+    height: 50vh;
+}
+
+.contacts h2 {
     padding-top: 25vh;
-    font-weight: 500px;
+    font-weight:500;
     font-size: 2.5rem;
-    display: flex;
+    color: #22333B;
+    text-align: center;
 }
 
 .contacts p {
     margin-top:  10px;
     display: flex;
+    color: #22333B;
+    text-align: center;
+
 }
 
 .contacts a {
+    display: flex;
+    color: #22333B;
     text-align: center;
-    margin-bottom: 90px;
 }
+
+.contacts i {
+    display: flex;
+    text-align: center;
+    color: #22333B;
+}
+
 .contacts-links {
     margin-top:  10px;
     display: flex;
     justify-content:space-evenly;
-    font-size: 2rem;
+    color: #22333B;
 }
 
-.work-grid2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1300px;
-    margin-bottom: 6rem;
-    text-align: center;
-    align-items: center;
-}
-
-.work-grid2 a {
-    text-align: center;
-}
-.header-contacts {
-    margin-bottom: 100px;
-    text-align: center;
-    display: flex;
-}
-
-.hashtag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 110vh;
-    background-color: #720303;
-}
-.hashtag h2{
-    font-size: 3rem;
-    text-align: center;
-    color: #ffffff;
-}
 

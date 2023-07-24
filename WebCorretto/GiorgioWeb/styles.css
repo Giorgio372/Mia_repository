@@ -191,10 +191,9 @@ p {
 /* Contacts */
 
 .contacts {
-    
     text-align: center;
-    background-color: #AA4465;
-    color: #EAE0D5;
+    background-color: #EAE0D5;
+    color: #22333B;
     height: 50vh;
 }
 
@@ -202,23 +201,33 @@ p {
     padding-top: 25vh;
     font-weight:500;
     font-size: 2.5rem;
+    color: #22333B;
+    text-align: center;
 }
 
 .contacts p {
-    margin-left: 800px ;
-    margin-right: 800px ;
     margin-top:  10px;
     display: flex;
-    justify-content:space-evenly;
+    color: #22333B;
+    text-align: center;
 
 }
+
+.contacts a {
+    display: flex;
+    color: #22333B;
+    text-align: center;
+}
+
+.contacts i {
+    display: flex;
+    text-align: center;
+    color: #22333B;
+}
+
 .contacts-links {
-    margin-left: 800px ;
-    margin-right: 800px ;
     margin-top:  10px;
     display: flex;
     justify-content:space-evenly;
-    
+    color: #22333B;
 }
-
-
